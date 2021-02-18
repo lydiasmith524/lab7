@@ -22,6 +22,7 @@
 
 	ga('create', 'UA-190154873-1', 'auto');
 	ga('send', 'pageview');
+
 	</script>
 	<!-- End Google Analytics -->
 </head>
@@ -34,6 +35,11 @@
 		</div>
 
 		<h4>Projects</h4>
+		{{#if viewAlt}}
+			"Min! <button class="likeBtn">Like Button</button>
+		{{else}}
+			<p>no like button</p>
+		{{/if}}
 		{{#each projects}}
 			<div class="project" id="{{id}}">
 				<div class="thumbnail">
